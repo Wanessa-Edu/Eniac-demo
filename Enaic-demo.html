@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>eniac — Demonstração de Componentes</title>
+<link rel="stylesheet" href="eniac.css" />
+<style>
+/* Demo-only: guide labels */
+.demo-label {
+font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+text-transform: uppercase; color: var(--ink-muted);
+padding: 4px 12px; border-radius: var(--r-pill);
+border: 1px dashed rgba(26,32,53,.2);
+display: inline-block; margin-bottom: var(--space-sm);
+}
+.demo-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md); }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+
+<nav class="eniac-nav">
+<div class="eniac-nav__logo">Eniac <strong>1945</strong></div>
+<ul class="eniac-nav__links">
+<li><a href="#" class="eniac-nav__link eniac-nav__link--active">Início</a></li>
+<li><a href="#" class="eniac-nav__link">Início</a></li>
+<li><a href="#" class="eniac-nav__link">Detalhes</a></li>
+<li><a href="#" class="eniac-nav__link">Galeria</a></li>
+<li><a href="#" class="eniac-nav__link">Equipe</a></li>
+</ul>
+<div class="eniac-nav__burger" id="burger">
+<span></span><span></span><span></span>
+</div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+
+<section class="eniac-hero eniac-bg-mesh">
+<div class="eniac-hero__blob eniac-hero__blob--1"></div>
+<div class="eniac-hero__blob eniac-hero__blob--2"></div>
+<div class="eniac-hero__blob eniac-hero__blob--3"></div>
+
+```
+<div class="eniac-hero__content">
+<div class="eniac-hero__eyebrow">Desenvolvimento para Internet</div>
+<h1 class="eniac-hero__title">
+Electronic<br>
+<em>Numeric and</em><br>
+Computer
+</h1>
+<p class="eniac-hero__subtitle">
+O Eniac foi o primeiro computador eletrônico de grande escala de uso geral da hitória, construído nos Estados Unidos.
+</p>
+
+
+<!-- ═══════════════ METRICS ═══════════════ -->
+
+<div class="eniac-container">
+<div class="eniac-metrics" style="border-radius:var(--r-lg);overflow:hidden">
+<div class="eniac-metric">
+<div class="eniac-metric__number">1<sup>º</sup></div>
+<div class="eniac-metric__label">Computador eletrônico programável de uso geral do mundo</div>
+<span class="eniac-badge eniac-badge--blue eniac-metric__badge">Concluído em 1945</span>
+</div>
+<div class="eniac-metric">
+<div class="eniac-metric__number">Origem<sup>+</sup></div>
+<div class="eniac-metric__label">Dedicado oficialmente na Universidade da Pensilvânia em 15 de fevereiro de 1946</div>
+<span class="eniac-badge eniac-badge--pink eniac-metric__badge">custando US$487.000</span>
+</div>
+<div class="eniac-metric">
+<div class="eniac-metric__number">Trajetória</div>
+<div class="eniac-metric__label">O dispositivo foi criado durante a Segunda Guerra Mundial com finalidade militar</div>
+<span class="eniac-badge eniac-badge--green eniac-metric__badge">"Cérebro Gigante"</span>
+</div>
+<div class="eniac-metric">
+<div class="eniac-metric__number">Propósito</div>
+<div class="eniac-metric__label">Otimizou cálculos balístico e de mísseis.</div>
+<span class="eniac-badge eniac-badge--blue eniac-metric__badge">até 1955</span>
+</div>
+</div>
+</div>
+
+<!-- ═══════════════ FEATURE CARDS ═══════════════ -->
+
+<section class="eniac-section">
+<div class="eniac-container">
+<header class="eniac-section-header">
+<p class="eniac-h5">Detalhes</p>
+<h2 class="eniac-h2">Dimensões <em class="eniac-em">Impressionantes</em></h2>
+<p class="eniac-lead">Ao final de sua operação, o ENIAC continha 18.000 válvulas, 7.200 diodos de cristal, 6.000 relés, 70.000 resistores e 10.000 capacitores. Pesava mais de 30 toneladas, media cerca de 3m de altura e 30m de comprimento, ocupando 300m² e consumindo 150kW de eletricidade.</p>
+</header>
+<div class="eniac-grid eniac-grid--3">
+<div class="eniac-card eniac-card--blue eniac-animate-fade-up">
+<div class="eniac-card__icon">📄</div>
+<h3 class="eniac-card__title">Suas principais programadoras</h3>
+<p class="eniac-card__body">Nomes femininos que se destacam: Kathleen McNulty, Jean Bartik, Frances "Betty" Holberton, Maryl Meltzer, Frances Spence e Ruth Teitelbaum.</p>
+<div class="eniac-card__footer">
+<span class="eniac-badge eniac-badge--pink eniac-metric__badge">Força feminina</span>
+<span class="eniac-small">6 mulheres</span>
+</div>
+</div>
+<div class="eniac-card eniac-card--pink eniac-animate-fade-up eniac-delay-1">
+<div class="eniac-card__icon">🎖️</div>
+<h3 class="eniac-card__title">Legado</h3>
+<p class="eniac-card__body">Ficou em operação por apenas 10 anos, sendo desativado em 1955 e substituído pelo EDVAC, primeiro computador com capacidade de armazenamento.</p>
+<div class="eniac-card__footer">
+<span class="eniac-status eniac-status--pending">Obsoleto</span>
+<span class="eniac-small">EDVAC</span>
+</div>
+</div>
+<div class="eniac-card eniac-card--green eniac-animate-fade-up eniac-delay-2">
+<div class="eniac-card__icon">🪧</div>
+<h3 class="eniac-card__title">História</h3>
+<p class="eniac-card__body">Hoje, partes da máquina estão expostas na Universidade da Pensilvânia, no Museu Smithsonian em Washington D.C. e no Museu da História do Computador na califórnia.</p>
+<div class="eniac-card__footer">
+<span class="eniac-status eniac-status--done">Encerrado</span>
+<span class="eniac-small">1955</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════ TIMELINE ═══════════════ -->
+
+<section class="eniac-section--sm">
+<div class="eniac-container">
+<div class="eniac-bg-dark eniac-bg-mesh--dark" style="border-radius:var(--r-xl);padding:var(--space-xl)">
+<header class="eniac-section-header">
+<p class="eniac-h5" style="color:var(--green)">O ENIAC em profundidade</p>
+<h2 class="eniac-h2" style="color:#fff">Contexto histórico:<em class="eniac-em"> a guerra que gerou um computador</em></h2>
+<p class="eniac-lead" style="color:rgba(255,255,255,.45)">Acompanhe as fases do eniac 2025 e não perca os prazos.</p>
+</header>
+<div class="eniac-timeline eniac-timeline--dark">
+<div class="eniac-timeline__item">
+<div class="eniac-timeline__dot eniac-timeline__dot--blue">1</div>
+<div class="eniac-timeline__content">
+<p class="eniac-timeline__phase">Universidade da Pensilvânia · 5 de junho de 1943</p>
+<h4 class="eniac-timeline__title">Durante a Segunda Guerra Mundial, o Exército norte-americano tinha um problema urgente: calcular as tabelas de trajetórias balísticas de artilharia. Cada tabela exigia resolver centenas de equações diferenciais complexas — um trabalho que, feito à mão por uma equipe de matemáticos, levava semanas. Um único cálculo de trajetória podia levar 40 horas para ser feito à mão.</h4>
+<p class="eniac-timeline__desc">Foi nesse cenário que o físico John Mauchly teve a ideia de criar uma máquina eletrônica para automatizar esse processo. Embora o custo estimado inicial fosse US$ 150.000, a máquina acabou custando US$ 400.000 para ser concluída.</p>
+<span class="eniac-badge eniac-badge--blue" style="margin-top:10px">O trabalho no ENIAC começou na Universidade da Pensilvânia em 5 de junho de 1943</span>
+</div>
+</div>
+<div class="eniac-timeline__item">
+<div class="eniac-timeline__dot eniac-timeline__dot--pink">2</div>
+<div class="eniac-timeline__content">
+<p class="eniac-timeline__phase">Uma máquina colossal</p>
+<h4 class="eniac-timeline__title">O ENIAC era cerca de 1.000 vezes mais rápido que o Harvard Mark I, e 10.000 vezes mais veloz que um humano fazendo cálculos manualmente.</h4>
+<p class="eniac-timeline__desc">O ENIAC era composto por 40 gabinetes de 2,7 metros de altura, contendo 18.000 válvulas de vácuo, 10.000 capacitores, 6.000 interruptores e 1.500 relés. Gerava 174 kilowatts de calor, exigindo seu próprio sistema de ar-condicionado, e conseguia executar até 5.000 adições por segundo — ordens de magnitude mais rápido que seus predecessores eletromecânicos.</p>
+<span class="eniac-badge eniac-badge--pink" style="margin-top:10px">⏳ Em andamento</span>
+</div>
+</div>
+<div class="eniac-timeline__item">
+<div class="eniac-timeline__dot eniac-timeline__dot--green">3</div>
+<div class="eniac-timeline__content">
+<p class="eniac-timeline__phase">O primeiro programa: a bomba de hidrogênio</p>
+<h4 class="eniac-timeline__title">Apresentações e Plenárias</h4>
+<p class="eniac-timeline__desc">A guerra terminou antes do ENIAC ficar pronto — mas a máquina não ficou ociosa. Em dezembro de 1945, o ENIAC foi usado para calcular reações termonucleares, e os dados serviram para apoiar a pesquisa sobre a construção de uma bomba de hidrogênio. Seu primeiro programa foi, portanto, um estudo sobre a viabilidade de uma arma termonuclear. ￼
+O sucesso desse projeto também mostrou o valor do Método de Monte Carlo na ciência, quando John von Neumann e Stanislaw Ulam perceberam que a velocidade do ENIAC permitiria fazer cálculos de difusão de nêutrons muito mais rapidamente.</p>
+<span class="eniac-badge eniac-badge--dark" style="margin-top:10px;opacity:.5">🔒</span>
+</div>
+</div>
+<div class="eniac-timeline__item">
+<div class="eniac-timeline__dot eniac-timeline__dot--muted">4</div>
+<div class="eniac-timeline__content">
+<p class="eniac-timeline__phase"></p>
+<h4 class="eniac-timeline__title">As “Seis do ENIAC”: as pioneiras apagadas da história</h4>
+<p class="eniac-timeline__desc">Quando o ENIAC foi finalmente apresentado em fevereiro de 1946, duas mulheres haviam criado a demonstração que impressionou a mídia — mas o trabalho delas, e de outras quatro mulheres que ajudaram a colocar o ENIAC em funcionamento, foi literalmente apagado. Fotos de arquivo mostram tanto homens quanto mulheres trabalhando na máquina, mas os artigos e imagens publicados na época só mostravam homens.
+As seis foram: Kathleen McNulty, Jean Jennings Bartik, Frances “Betty” Holberton, Marlyn Wescoff Meltzer, Frances Bilas Spence e Ruth Lichterman Teitelbaum. Elas aprenderam a programar o ENIAC por conta própria, usando plantas e diagramas da máquina, e depois escreveram o manual de operação. Décadas depois, as “ENIAC Six” foram finalmente reconhecidas e introduzidas ao Women in Technology International Hall of Fame em 1997. </p>
+
+</div>
+</div>
+<span class="eniac-badge eniac-badge--dark" style="margin-top:10px;opacity:.5">🔒</span>
+<div class="eniac-timeline__item">
+<div class="eniac-timeline__dot eniac-timeline__dot--muted">4</div>
+<div class="eniac-timeline__content">
+<h4 class="eniac-timeline__title">O fim e o legado</h4>
+<p class="eniac-timeline__desc">Na celebração do 50º aniversário do ENIAC, a máquina foi reimplementada usando tecnologia de circuito integrado moderno. O computador que ocupava uma sala inteira cabia agora na palma de uma mão. ￼
+Às 23h45 do dia 2 de outubro de 1955, após cerca de dez anos de serviço contínuo, a energia do ENIAC foi desligada pela última vez no Aberdeen Proving Ground. Estima-se que essa única máquina tenha feito mais cálculos durante seus dez anos de operação do que toda a raça humana até o momento de sua invenção.</p>
+<span class="eniac-badge eniac-badge--dark" style="margin-top:10px;opacity:.5">🔒</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════ TEAM ═══════════════ -->
+
+<section class="eniac-section">
+<div class="eniac-container">
+<header class="eniac-section-header">
+<p class="eniac-h5">Comissão Organizadora</p>
+<h2 class="eniac-h2">Quem faz o <em class="eniac-em--pink">eniac</em> acontecer</h2>
+<p class="eniac-lead">Professores e coordenadores dedicados a fomentar a pesquisa científica na instituição.</p>
+</header>
+<div class="eniac-grid eniac-grid--4">
+<div class="eniac-team-card">
+<div class="eniac-team-card__avatar eniac-team-card__avatar--blue">🎓</div>
+<div class="eniac-team-card__info">
+<p class="eniac-team-card__name">Profa. Ana Carolina</p>
+<p class="eniac-team-card__role">Coordenadora Geral</p>
+<div class="eniac-team-card__tags">
+<span class="eniac-badge eniac-badge--blue">Pesquisa</span>
+<span class="eniac-badge eniac-badge--green">Metodologia</span>
+</div>
+</div>
+</div>
+<div class="eniac-team-card">
+<div class="eniac-team-card__avatar eniac-team-card__avatar--pink">💻</div>
+<div class="eniac-team-card__info">
+<p class="eniac-team-card__name">Prof. Bruno Mendes</p>
+<p class="eniac-team-card__role">Coord. de Avaliação</p>
+<div class="eniac-team-card__tags">
+<span class="eniac-badge eniac-badge--pink">Dados</span>
+<span class="eniac-badge eniac-badge--blue">Estatística</span>
+</div>
+</div>
+</div>
+<div class="eniac-team-card">
+<div class="eniac-team-card__avatar eniac-team-card__avatar--green">📝</div>
+<div class="eniac-team-card__info">
+<p class="eniac-team-card__name">Profa. Clara Souza</p>
+<p class="eniac-team-card__role">Coord. Editorial</p>
+<div class="eniac-team-card__tags">
+<span class="eniac-badge eniac-badge--green">Anais</span>
+<span class="eniac-badge eniac-badge--pink">ABNT</span>
+</div>
+</div>
+</div>
+<div class="eniac-team-card">
+<div class="eniac-team-card__avatar eniac-team-card__avatar--mix">🔬</div>
+<div class="eniac-team-card__info">
+<p class="eniac-team-card__name">Prof. Diego Rocha</p>
+<p class="eniac-team-card__role">Coord. Científico</p>
+<div class="eniac-team-card__tags">
+<span class="eniac-badge eniac-badge--blue">Inovação</span>
+<span class="eniac-badge eniac-badge--green">IC</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="img-box img-box img-box-blue">
+    
+</div>
+
+
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+
+<footer class="eniac-footer">
+<div class="eniac-footer__inner eniac-container">
+<div class="eniac-footer__logo">Desenvolvimento para Internet <em>2026</em></div>
+<p class="eniac-footer__copy">Trabalho universitário usado para fins acadêmicos</p>
+<div class="eniac-footer__dots">
+<div class="eniac-footer__dot eniac-footer__dot--blue"></div>
+<div class="eniac-footer__dot eniac-footer__dot--pink"></div>
+<div class="eniac-footer__dot eniac-footer__dot--green"></div>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile menu toggle
+const burger = document.getElementById('burger');
+const links = document.querySelector('.eniac-nav__links');
+burger.addEventListener('click', () => {
+burger.classList.toggle('eniac-nav__burger--open');
+links.classList.toggle('eniac-nav__links--open');
+});
+
+// Sticky nav shadow
+window.addEventListener('scroll', () => {
+document.querySelector('.eniac-nav')
+.classList.toggle('eniac-nav--scrolled', scrollY > 10);
+});
+</script>
+
+</body>
+</html>
